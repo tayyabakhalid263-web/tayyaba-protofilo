@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tayyaba Khalid — Frontend Web Developer</title>
+<meta name="description" content="Portfolio of Tayyaba Khalid, Frontend Web Developer & Software Engineering student.">
+
+<!-- Google Fonts: Poppins -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="logo">TK<span>.</span></a>
+
+    <nav class="nav-menu" id="navMenu">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#achievements" class="nav-link">Achievements</a>
+      <a href="#testimonials" class="nav-link">Testimonials</a>
+      <a href="#blog" class="nav-link">Blog</a>
+      <a href="#contact" class="nav-link nav-cta">Contact</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <div class="hero-content">
+    <p class="hero-greet reveal-up">Hello, I'm</p>
+    <h1 class="hero-name reveal-up">Tayyaba Khalid</h1>
+    <h2 class="hero-role reveal-up">
+      <span id="typedText"></span><span class="cursor-blink">|</span>
+    </h2>
+    <p class="hero-desc reveal-up">
+      Passionate Frontend Web Developer pursuing BS Software Engineering at
+      The University of Lahore — building modern, user-friendly web experiences
+      and working toward becoming a Software Engineer in AI &amp; Full Stack Development.
+    </p>
+
+    <div class="hero-actions reveal-up">
+      <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-diagram-project"></i> View Projects</a>
+      <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-paper-plane"></i> Hire Me</a>
+    </div>
+
+    <div class="hero-socials reveal-up">
+      <a href="https://www.linkedin.com/in/tayyaba-khalid-0519743b3" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/tayyabakhalid263-web" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="mailto:tayyabakhalid7282@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-down" aria-label="Scroll down">
+    <i class="fa-solid fa-chevron-down"></i>
+  </a>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="section-head reveal-up">
+    <span class="tag">// About Me</span>
+    <h2>Get To Know Me</h2>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-text reveal-up">
+      <p>
+        I am a passionate and dedicated <strong>Frontend Web Developer</strong> currently pursuing a
+        Bachelor's degree in Software Engineering at <strong>The University of Lahore</strong>. I have
+        strong knowledge of HTML, CSS, JavaScript, Git, GitHub, and responsive web development.
+      </p>
+      <p>
+        I enjoy building modern, user-friendly websites and continuously learning new technologies.
+        I'm currently looking for an <strong>internship opportunity</strong> to gain industry experience
+        and further enhance my technical skills — with a long-term goal of becoming a skilled
+        Software Engineer specializing in <strong>AI &amp; Full Stack Development</strong>.
+      </p>
+
+      <div class="about-info">
+        <div><i class="fa-solid fa-graduation-cap"></i><span>BS Software Engineering</span></div>
+        <div><i class="fa-solid fa-location-dot"></i><span>Lahore, Pakistan</span></div>
+        <div><i class="fa-solid fa-envelope"></i><span>tayyabakhalid7282@gmail.com</span></div>
+        <div><i class="fa-solid fa-phone"></i><span>0328 7892263</span></div>
+      </div>
+
+      <a href="#contact" class="btn btn-primary">Let's Connect <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
+    <div class="counters reveal-up">
+      <div class="counter-card">
+        <i class="fa-solid fa-diagram-project"></i>
+        <h3><span class="counter" data-target="6">0</span>+</h3>
+        <p>Projects Completed</p>
+      </div>
+      <div class="counter-card">
+        <i class="fa-solid fa-star"></i>
+        <h3><span class="counter" data-target="3.84" data-decimal="true">0</span></h3>
+        <p>Current CGPA</p>
+      </div>
+      <div class="counter-card">
+        <i class="fa-solid fa-code"></i>
+        <h3><span class="counter" data-target="10">0</span>+</h3>
+        <p>Technologies Learned</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION TIMELINE ============ -->
+<section class="section section-alt" id="education">
+  <div class="section-head reveal-up">
+    <span class="tag">// Education</span>
+    <h2>My Academic Journey</h2>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item reveal-up">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card glass">
+        <span class="timeline-date">2022 — Present</span>
+        <h3>BS Software Engineering</h3>
+        <p class="timeline-sub">The University of Lahore</p>
+        <p class="timeline-cgpa"><i class="fa-solid fa-star"></i> Current CGPA: 3.84</p>
+        <div class="course-tags">
+          <span>Web Development</span>
+          <span>Operating Systems</span>
+          <span>Data Structures &amp; Algorithms</span>
+          <span>Database Systems</span>
+          <span>Software Engineering</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section" id="skills">
+  <div class="section-head reveal-up">
+    <span class="tag">// Skills</span>
+    <h2>My Technical Toolkit</h2>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-block glass reveal-up">
+      <h3><i class="fa-solid fa-laptop-code"></i> Frontend</h3>
+      <div class="skill-bar">
+        <div class="skill-bar-top"><span>HTML5</span><span>95%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-width="95"></div></div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-bar-top"><span>CSS3</span><span>90%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-bar-top"><span>JavaScript</span><span>82%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-width="82"></div></div>
+      </div>
+    </div>
+
+    <div class="skill-block glass reveal-up">
+      <h3><i class="fa-solid fa-toolbox"></i> Tools</h3>
+      <div class="skill-bar">
+        <div class="skill-bar-top"><span>Git</span><span>85%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-bar-top"><span>GitHub</span><span>85%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-bar-top"><span>VS Code</span><span>92%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-width="92"></div></div>
+      </div>
+    </div>
+
+    <div class="skill-block glass reveal-up">
+      <h3><i class="fa-solid fa-people-group"></i> Other Skills</h3>
+      <div class="skill-bar">
+        <div class="skill-bar-top"><span>Responsive Design</span><span>90%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-bar-top"><span>Problem Solving</span><span>88%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-width="88"></div></div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-bar-top"><span>Teamwork &amp; Communication</span><span>90%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section section-alt" id="projects">
+  <div class="section-head reveal-up">
+    <span class="tag">// Portfolio</span>
+    <h2>Featured Projects</h2>
+  </div>
+
+  <div class="projects-grid">
+
+    <article class="project-card glass reveal-up">
+      <div class="project-img"><i class="fa-solid fa-bag-shopping"></i></div>
+      <div class="project-body">
+        <h3>Lifestyle Store Management System</h3>
+        <p>A web-based system for managing an online lifestyle store.</p>
+        <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <ul class="feature-list">
+          <li>Product listing</li>
+          <li>Shopping cart</li>
+          <li>Categories</li>
+          <li>Responsive UI</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/tayyabakhalid263-web" target="_blank" class="btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="#" class="btn-sm btn-primary"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card glass reveal-up">
+      <div class="project-img"><i class="fa-solid fa-cart-shopping"></i></div>
+      <div class="project-body">
+        <h3>E-Commerce Website</h3>
+        <p>A responsive online shopping website.</p>
+        <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <ul class="feature-list">
+          <li>Product cards</li>
+          <li>Shopping cart</li>
+          <li>Search &amp; categories</li>
+          <li>Responsive design</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/tayyabakhalid263-web" target="_blank" class="btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="#" class="btn-sm btn-primary"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card glass reveal-up">
+      <div class="project-img"><i class="fa-solid fa-heart-pulse"></i></div>
+      <div class="project-body">
+        <h3>Health Monitoring System</h3>
+        <p>A health monitoring application for managing health-related information.</p>
+        <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <ul class="feature-list">
+          <li>Health data management</li>
+          <li>Dashboard</li>
+          <li>Responsive interface</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/tayyabakhalid263-web" target="_blank" class="btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="#" class="btn-sm btn-primary"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card glass reveal-up">
+      <div class="project-img"><i class="fa-solid fa-key"></i></div>
+      <div class="project-body">
+        <h3>Password Generator</h3>
+        <p>A secure password generator.</p>
+        <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <ul class="feature-list">
+          <li>Random password generation</li>
+          <li>Password length selection</li>
+          <li>Copy to clipboard</li>
+          <li>Strong password options</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/tayyabakhalid263-web" target="_blank" class="btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="#" class="btn-sm btn-primary"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card glass reveal-up">
+      <div class="project-img"><i class="fa-solid fa-qrcode"></i></div>
+      <div class="project-body">
+        <h3>QR Code Generator</h3>
+        <p>Generate QR codes instantly.</p>
+        <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <ul class="feature-list">
+          <li>QR generation</li>
+          <li>Download QR</li>
+          <li>Responsive interface</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/tayyabakhalid263-web" target="_blank" class="btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="#" class="btn-sm btn-primary"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card glass reveal-up">
+      <div class="project-img"><i class="fa-solid fa-list-check"></i></div>
+      <div class="project-body">
+        <h3>React Flask Todo Application</h3>
+        <p>A full-stack Todo application.</p>
+        <div class="tech-tags"><span>React</span><span>Flask</span></div>
+        <ul class="feature-list">
+          <li>Add / delete / update tasks</li>
+          <li>Mark complete</li>
+          <li>API integration</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/tayyabakhalid263-web" target="_blank" class="btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="#" class="btn-sm btn-primary"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section" id="experience">
+  <div class="section-head reveal-up">
+    <span class="tag">// Experience</span>
+    <h2>Where I'm Headed</h2>
+  </div>
+
+  <div class="experience-card glass reveal-up">
+    <i class="fa-solid fa-briefcase"></i>
+    <h3>Seeking My First Internship</h3>
+    <p>
+      I'm currently seeking my first internship where I can apply my frontend development skills,
+      contribute to real-world projects, and gain professional industry experience alongside a
+      collaborative engineering team.
+    </p>
+  </div>
+</section>
+
+<!-- ============ ACHIEVEMENTS ============ -->
+<section class="section section-alt" id="achievements">
+  <div class="section-head reveal-up">
+    <span class="tag">// Recognition</span>
+    <h2>Achievements</h2>
+  </div>
+
+  <div class="achievements-grid">
+    <div class="achievement-card glass reveal-up">
+      <i class="fa-solid fa-award"></i>
+      <h3>Merit-Based Scholarship</h3>
+    </div>
+    <div class="achievement-card glass reveal-up">
+      <i class="fa-solid fa-certificate"></i>
+      <h3>Dean's Certificate</h3>
+      <p>Outstanding Academic Performance</p>
+    </div>
+    <div class="achievement-card glass reveal-up">
+      <i class="fa-solid fa-medal"></i>
+      <h3>Academic Excellence Certificate</h3>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section" id="testimonials">
+  <div class="section-head reveal-up">
+    <span class="tag">// Testimonials</span>
+    <h2>What People Say</h2>
+  </div>
+
+  <div class="placeholder-card glass reveal-up">
+    <i class="fa-solid fa-quote-left"></i>
+    <p>Testimonials will be added after professional collaborations.</p>
+  </div>
+</section>
+
+<!-- ============ BLOG ============ -->
+<section class="section section-alt" id="blog">
+  <div class="section-head reveal-up">
+    <span class="tag">// Blog</span>
+    <h2>Latest Writing</h2>
+  </div>
+
+  <div class="placeholder-card glass reveal-up">
+    <i class="fa-solid fa-pen-nib"></i>
+    <p>Articles Coming Soon</p>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact">
+  <div class="section-head reveal-up">
+    <span class="tag">// Contact</span>
+    <h2>Let's Work Together</h2>
+  </div>
+
+  <div class="contact-grid">
+    <div class="contact-info reveal-up">
+      <div class="contact-item">
+        <i class="fa-solid fa-phone"></i>
+        <div><span>Phone</span><p>0328 7892263</p></div>
+      </div>
+      <div class="contact-item">
+        <i class="fa-solid fa-envelope"></i>
+        <div><span>Email</span><p>tayyabakhalid7282@gmail.com</p></div>
+      </div>
+      <div class="contact-item">
+        <i class="fa-solid fa-location-dot"></i>
+        <div><span>Location</span><p>Lahore, Pakistan</p></div>
+      </div>
+      <div class="contact-socials">
+        <a href="https://www.linkedin.com/in/tayyaba-khalid-0519743b3" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/tayyabakhalid263-web" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:tayyabakhalid7282@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <form class="contact-form glass reveal-up" id="contactForm" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="John Doe" required>
+          <span class="error-msg" id="nameError"></span>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="john@example.com" required>
+          <span class="error-msg" id="emailError"></span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Let's talk about..." required>
+        <span class="error-msg" id="subjectError"></span>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+        <span class="error-msg" id="messageError"></span>
+      </div>
+      <button type="submit" class="btn btn-primary full-width">
+        <i class="fa-solid fa-paper-plane"></i> Send Message
+      </button>
+      <p class="form-success" id="formSuccess">
+        <i class="fa-solid fa-circle-check"></i> Thanks! Your message has been noted.
+      </p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-content">
+    <a href="#home" class="logo">TK<span>.</span></a>
+    <p>Building modern, user-friendly web experiences — one project at a time.</p>
+
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/tayyaba-khalid-0519743b3" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/tayyabakhalid263-web" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="mailto:tayyabakhalid7282@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+
+    <p class="copyright">© <span id="year"></span> Tayyaba Khalid. All rights reserved.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <i class="fa-solid fa-chevron-up"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
